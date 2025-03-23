@@ -1,0 +1,53 @@
+item-storage-project/
+├── item-storage-backend/       # Node.js/Express backend
+│   ├── config/
+│   │   ├── config.js           # Environment variables
+│   │   └── db.js               # MySQL connection
+│   ├── controllers/            # Business logic
+│   │   ├── authController.js   # Authentication logic
+│   │   ├── itemController.js   # Item CRUD operations
+│   │   ├── categoryController.js
+│   │   ├── locationController.js
+│   │   └── userController.js
+│   ├── middleware/
+│   │   ├── auth.js             # JWT authentication
+│   │   └── errorHandler.js     # Error handling
+│   ├── routes/                 # API endpoints
+│   │   ├── authRoutes.js       # /api/auth endpoints
+│   │   ├── itemRoutes.js       # /api/items endpoints
+│   │   ├── categoryRoutes.js   # /api/categories endpoints
+│   │   ├── locationRoutes.js   # /api/locations endpoints
+│   │   └── userRoutes.js       # /api/users endpoints
+│   ├── utils/
+│   │   └── validation.js       # Input validation
+│   ├── .env                    # Environment variables
+│   ├── package.json            # Backend dependencies
+│   └── server.js               # Main server file
+│
+├── item-storage-frontend/      # React.js frontend
+│   ├── public/
+│   │   └── index.html          # HTML template
+│   ├── src/
+│   │   ├── components/         # UI components
+│   │   │   ├── auth/
+│   │   │   │   ├── Login.js
+│   │   │   │   └── Register.js
+│   │   │   ├── items/
+│   │   │   │   ├── ItemList.js
+│   │   │   │   └── ItemForm.js
+│   │   │   ├── categories/
+│   │   │   ├── locations/
+│   │   │   └── layout/
+│   │   │       ├── Navbar.js
+│   │   │       └── Dashboard.js
+│   │   ├── context/            # State management
+│   │   │   ├── AuthContext.js  # Authentication state
+│   │   │   └── ItemContext.js  # Item data state
+│   │   ├── utils/
+│   │   │   └── api.js          # Axios API utility
+│   │   ├── App.js              # Main component
+│   │   └── index.js            # Entry point
+│   ├── package.json            # Frontend dependencies
+│   └── .env                    # Frontend environment variables
+│
+└── README.md                   # Project documentation
